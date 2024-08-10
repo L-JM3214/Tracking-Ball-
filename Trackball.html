@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Tracker Dot</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; 
+            background-color: #f0f0f0; 
+        }
+        #dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%; 
+            pointer-events: none; 
+            transition: transform 0.1s; 
+        }
+    </style>
+</head>
+<body>
+
+<div id="dot"></div>
+
+<script>
+    // Get the dot element
+    const dot = document.getElementById('dot');
+
+    // Function to update the dot's position
+    function updateDotPosition(event) {
+        // Get the mouse coordinates
+        const x = event.clientX;
+        const y = event.clientY;
+
+        // Update the dot's position
+        dot.style.transform = `translate(${x - 10}px, ${y - 10}px)`; // Center the dot
+    }
+
+    // Add event listener for mouse movement
+    document.addEventListener('mousemove', updateDotPosition);
+</script>
+
+</body>
+</html>
