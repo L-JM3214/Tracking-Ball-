@@ -6,18 +6,18 @@ A red circular dot that tracks the mouse pointer.
 Smooth movement using CSS transitions.
 Lightweight and easy to integrate into any webpage.
 Technologies Used
-## HTML: 
+### HTML: 
 For the structure of the webpage.
-## CSS: 
+### CSS: 
 For styling the dot and the overall layout.
-## JavaScript: 
+### JavaScript: 
 For handling mouse events and updating the dot's position.
 
-# Customization
+## Customization
 Feel free to customize the following aspects of the project:
-## Dot Color: 
+### Dot Color: 
 Change the background-color property in the CSS to alter the dot's color.
-## Dot Size: 
+### Dot Size: 
 Modify the width and height properties in the CSS to change the size of the dot.
-## Animation Speed: 
+### Animation Speed: 
 Adjust the transition property in the CSS to change the speed of the dot's movement.
